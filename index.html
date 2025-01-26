@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="title">Number Guessing Game</div>
+            <p class="subtitles">
+                Welcome to the Number Guessing Game! <br>
+                I'm thinking of a number between 1 and 100. <br>
+                And your task is to guess the number, <br> in least number of attempts possible.
+            </p>
+            <button class="start-btn">Start</button>
+        </div>
+        <div class="input">
+            <input type="text" class="input-number" placeholder="Enter a number...">
+            <button class="guess-btn" onclick="check(Math.floor((Math.random() * 100) + 1))">Guess</button>
+        </div>
+        <div class="stats"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
